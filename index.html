@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Site</title>
     <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
 </head>
 
 <body>
@@ -16,8 +17,8 @@
         <div class="bg-homeBg h-[35vh] sm:h-[70vh] md:h-screen relative" id="home">
 
             <!-- navbar -->
-            <nav class="p-2 font-bold flex items-center justify-between 
-            sm:text-xl sm:p-4">
+            <nav class="p-2 font-bold flex items-center justify-between animate__animated
+            sm:text-xl sm:p-4" id="navbar">
 
                 <!-- Heading -->
                 <h1 class="text-black font-rubik text-md">
@@ -25,7 +26,7 @@
                 </h1>
 
                 <!-- nav-bar-A-tags -->
-                <ul class="absolute hidden top-[12%] w-full text-center space-y-5  py-3 z-30 bg-jobs_nav shadow-lg
+                <ul class="fixed hidden top-[5vh] w-full text-center space-y-5  py-3 z-30 bg-jobs_nav shadow-lg animate__animated
                 sm:flex sm:flex-row text-sm sm:py-0 sm:max-w-fit sm:gap-[4vw] sm:static sm:shadow-none sm:space-y-0" id="dropList">
                     <li class="cursor-pointer hover:text-category_bg duration-200">
                         <a href="#">Demos</a>
@@ -42,12 +43,12 @@
                 </ul>
 
                 <!-- button -->
-                <button class="bg-primary cursor-pointer text-white text-sm px-3 rounded font-light hidden sm:block">Get
+                <button class="bg-primary cursor-pointer text-white text-sm px-3 rounded font-light hidden sm:block" id="startBtn">Get
                     Started</button>
 
                 <!-- BarMenu -->
-                <div class="sm:hidden block cursor-pointer" id="barMenu">
-                    <span class="fa-solid fa-bars"></span>
+                <div class="sm:hidden block cursor-pointer">
+                    <span class="fa-solid fa-bars"  id="barMenu"></span>
                 </div>
 
             </nav>
@@ -640,7 +641,7 @@
         </footer>
 
         <a href="#home"  class="hidden p-5 bg-jobs_nav rounded-full size-4 text-[15px] fixed text-black bottom-[10vh] right-[5%] flex justify-center items-center 
-        hover:border-[3px] hover:border-category_bg hover:cursor-pointer active:bg-full-time duration-200" id="upBtn">
+        hover:border-[3px] hover:border-category_bg hover:cursor-pointer active:bg-full-time animate__animated  animate__infinite infinite" id="upBtn">
             <span class="fa-solid fa-arrow-up"></span>
         </a>      
     </main>
