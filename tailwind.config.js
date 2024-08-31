@@ -12,6 +12,7 @@ module.exports = {
         'full-time':'#68D585',
         'part-time':'#F64B4B',
         'envelope':'#68D585',
+        'dropMenu':'#d5851c'
       },
       fontFamily:{
         'rubik':['Rubik'],

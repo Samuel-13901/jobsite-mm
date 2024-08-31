@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <main class="p-0 m-0 box-border font-montserrat">
+    <main class="p-0 m-0 box-border font-montserrat relative">
 
         <!-- HomePage -->
         <div class="bg-homeBg h-[35vh] sm:h-[70vh] md:h-screen relative" id="home">
@@ -25,8 +25,8 @@
                 </h1>
 
                 <!-- nav-bar-A-tags -->
-                <ul class="absolute hidden top-[12%] w-full text-center space-y-5  py-3 z-20 bg-jobs_nav shadow-lg
-                sm:flex sm:flex-row text-sm sm:py-0 sm:max-w-fit sm:gap-[4vw] sm:static lg:bg-homeBg sm:space-y-0" id="dropList">
+                <ul class="absolute hidden top-[12%] w-full text-center space-y-5  py-3 z-30 bg-jobs_nav shadow-lg
+                sm:flex sm:flex-row text-sm sm:py-0 sm:max-w-fit sm:gap-[4vw] sm:static sm:shadow-none sm:space-y-0" id="dropList">
                     <li class="cursor-pointer hover:text-category_bg duration-200">
                         <a href="#">Demos</a>
                     </li>
@@ -639,6 +639,10 @@
 
         </footer>
 
+        <a href="#home"  class="hidden p-5 bg-jobs_nav rounded-full size-4 text-[15px] fixed text-black bottom-[10vh] right-[5%] flex justify-center items-center 
+        hover:border-[3px] hover:border-category_bg hover:cursor-pointer active:bg-full-time duration-200" id="upBtn">
+            <span class="fa-solid fa-arrow-up"></span>
+        </a>      
     </main>
     <script src="app.js"></script>
 </body>
